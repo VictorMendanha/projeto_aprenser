@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-principal: #fbcd01;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.dark-background {
+    background-color: #2a2a2a;
+    padding: 3em 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header_navigation {
+    list-style-type: none;
+}
+
+#header_navigation li {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+#header_navigation a {
+    text-decoration: none;
+    color: var(--color-principal);
+    outline: .1em solid var(--color-principal);
+    padding: .2em;
+}
+
+#header_navigation a:first-child,
+#header_navigation a:nth-child(2) {
+    margin-left: .4em;
+}
+
