@@ -1,9 +1,9 @@
-html {
-    font-size: 62.5%;
+:root {
+    --color-principal: #fed001;
 }
 
-:root {
-    --color-principal: #fbcd01;
+html {
+    font: 400 62.5% 'Inter', sans-serif;
 }
 
 body {
@@ -11,35 +11,154 @@ body {
     text-align: center;
 }
 
-.dark-background {
-    background-color: #2a2a2a;
-    padding: 3em 0;
+p, a {
+    font-size: 1.6rem;
 }
 
-.flex {
+.dark-background {
+    background-color: #2a2a2a;
+    padding: 2em 0;
+    color: #fafafa;
+}
+
+.centralizar {
+    max-width: 100rem;
+    margin: auto;
+}
+
+.flex-between {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.flex-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.principals-title {
+    padding: 1em 0;
+    font-size: 4rem;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    outline: .1em solid var(--color-principal);
+    border-radius: .5em;
+    background-color: var(--color-principal);
+    padding: .5em 2em;
+}
+
+.cards {
+    outline: .1em solid rgb(241, 239, 239);
+    border-radius: .5em;
+    margin-bottom: 10em;
+}
+
+.cards_text {
+    text-align: left;
+    padding: 4em 1em;
+}
+
+.cards h3 {
+    font-size: 2rem;
 }
 
 #header_navigation {
+    display: flex;
+    gap: .3em;
     list-style-type: none;
-}
-
-#header_navigation li {
-    display: inline-block;
     font-size: 2rem;
 }
 
 #header_navigation a {
     text-decoration: none;
+    font-weight:700;
     color: var(--color-principal);
     outline: .1em solid var(--color-principal);
-    padding: .2em;
+    padding: .6em;
 }
 
-#header_navigation a:first-child,
-#header_navigation a:nth-child(2) {
-    margin-left: .4em;
+#header_navigation a:hover {
+    transition: background-color .5s linear;
+    background-color: gray;
 }
 
+#hero-content {
+    background-image: linear-gradient(to top, #ffff41, transparent);
+    padding-top: 2em;
+}
+
+#hero-content_text {
+    text-align: left;
+}
+
+#hero-content_title {
+    width: 10em;
+    margin-bottom: 1.5em;
+    font-size: 5rem;
+    letter-spacing: .1em;
+    line-height: 1.2em;
+}
+
+#hero-content_title-ser {
+    text-transform: uppercase;
+}
+
+#hero-content_image {
+    height: 45em;
+    margin: 0;
+}
+
+#nossaEscola_background {
+    background-color: #003464;
+    margin-top: 10em;
+}
+
+#nossaEscola_img {
+    height: 40em;
+    padding-top: 10em;
+}
+
+#nossaEscola_text {
+    text-align: left;
+    color: #fafafa;
+}
+
+#nossaEscola_text h2 {
+    font-size: 4rem;
+}
+
+#nossaEscola_text p {
+    font-size: 1.99rem;
+    max-width: 60rem;
+}
+
+#cursoMap {
+    width: 100em;
+    height: 50em;
+    border: 0;
+}
+
+#contato-address {
+    padding: 1em 0;
+    text-align: right; 
+    font-size: 1.5rem;
+    font-weight: 500; 
+}
+
+#footer a {
+    color: #fafafa;
+}
