@@ -11,6 +11,12 @@ body {
     text-align: center;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 p, a {
     font-size: 1.6rem;
 }
@@ -24,6 +30,10 @@ p, a {
 .centralizar {
     max-width: 100rem;
     margin: auto;
+}
+
+.container-padding {
+    padding-top: 5rem;
 }
 
 .flex-between {
@@ -96,9 +106,8 @@ p, a {
     background-color: gray;
 }
 
-#hero-content {
+#hero-content_background {
     background-image: linear-gradient(to top, #ffff41, transparent);
-    padding-top: 2em;
 }
 
 #hero-content_text {

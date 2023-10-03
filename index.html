@@ -9,7 +9,9 @@
 <body>
     <header class="dark-background">
         <div class="centralizar flex-between">
+            <a href="#hero-content">
             <img src="imagens/logoAprenser.png" alt="Logo da Aprenser">
+            </a>
             <nav>
                 <ul id="header_navigation">
                     <li><a href="#cursos">Cursos</a></li>
@@ -22,15 +24,17 @@
 
     <main>
         <section id="hero-content">
-            <div class="centralizar flex-evenly">
-                <div id="hero-content_text">
-                    <h1 id="hero-content_title">O saber é que transforma nosso <span id="hero-content_title-ser">ser</span></h1>
-                    <a href="#" class="button">Saber mais</a>
+            <div id="hero-content_background">
+                <div class="centralizar flex-evenly">
+                    <div id="hero-content_text">
+                        <h1 id="hero-content_title">O saber é que transforma nosso <span id="hero-content_title-ser">ser</span></h1>
+                        <a href="#" class="button">Saber mais</a>
+                    </div>
+                    <img src="imagens/HeroImage.png" alt="Mulher cheirando as flores" id="hero-content_image">   
                 </div>
-                <img src="imagens/HeroImage.png" alt="Mulher cheirando as flores" id="hero-content_image">   
             </div>
         </section>
-        <section class="centralizar" id="cursos">
+        <section class="centralizar container-padding" id="cursos">
             <h2 class="principals-title">Principais Cursos</h2>
             <div class="flex-center">
                 <article class="cards">
@@ -57,18 +61,18 @@
             </div>
             <a href="#" class="button" id="maisCurso">Ver mais cursos</a>
         </section>
-        <section id="escola">
+        <section id="escola" class="container-padding">
             <div id="nossaEscola_background">
                 <div class="centralizar flex-center">
                     <img src="imagens/nossa-escola.png" alt="Mulher mexendo em laptop, sorrindo" id="nossaEscola_img">
                     <div id="nossaEscola_text">
-                        <h2>Nossa escola</h2>
+                        <h2 >Nossa escola</h2>
                         <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia online. <br>Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora e comece a sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contatos">
+        <section id="contatos" class="container-padding">
             <h2 class="principals-title">Contatos</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224486.29171701748!2d-52.97971679707575!3d-28.461522983156026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd492498d6957f%3A0x9a8b601ccba4050d!2sN%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1696077170751!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="localização do curso" id="cursoMap"></iframe>
             <address id="contato-address" class="centralizar">
